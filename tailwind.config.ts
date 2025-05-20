@@ -1,19 +1,24 @@
 import type { Config } from "tailwindcss";
 
-const config: Config = {
+export default {
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        "zap-blue": "#1E90FF",
+        "zap-gray": "#1F2937",
+      },
+      fontFamily: {
+        inter: ["Inter", "sans-serif"],
+      },
+      spacing: {
+        "1": "4px",
+        "2": "8px",
       },
     },
   },
   plugins: [],
-};
-export default config;
+} satisfies Config;
