@@ -37,5 +37,9 @@
   ],
   "exclude": [
     "node_modules"
-  ]
+  ],
+  "ts-node": {
+    "esm": true,
+    "experimentalResolver": true
+  }
 }
